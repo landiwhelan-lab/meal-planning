@@ -87,7 +87,7 @@
 
 <header>
   <h1>Landi Meal Planning</h1>
-  <p>Saturday 30 May – Saturday 6 June 2026 &nbsp;·&nbsp; Post-SADI-S &nbsp;·&nbsp; High protein · Low fat · Low sugar</p>
+  <p>Saturday 30 May – Saturday 6 June 2026 &nbsp;·&nbsp; High protein · Low fat · Low sugar</p>
 </header>
 
 <div class="targets-bar">
@@ -1048,19 +1048,26 @@ document.querySelectorAll('input[type=checkbox]').forEach(cb => {
   cb.addEventListener('change', () => sessionStorage.setItem(key, cb.checked));
 });
 
-// Copy shopping list as plain text for WhatsApp
+// Copy shopping list as plain text for WhatsApp — unchecked items only
 function copyShoppingList() {
   const sections = document.querySelectorAll('#shopping .shop-section');
   let text = '🛒 *Landi Shopping List — 30 May week*\n\n';
   sections.forEach(section => {
     const heading = section.querySelector('h3').innerText;
-    text += `*${heading}*\n`;
-    section.querySelectorAll('.shop-item label').forEach(label => {
+    const uncheckedItems = [];
+    section.querySelectorAll('.shop-item').forEach(item => {
+      const cb = item.querySelector('input[type="checkbox"]');
+      if (cb && cb.checked) return; // skip ticked items
+      const label = item.querySelector('label');
+      if (!label) return;
       const name = label.querySelector('strong').innerText;
       const detail = label.querySelector('span') ? label.querySelector('span').innerText : '';
-      text += `• ${name}${detail ? ' — ' + detail : ''}\n`;
+      uncheckedItems.push(`• ${name}${detail ? ' — ' + detail : ''}`);
     });
-    text += '\n';
+    if (uncheckedItems.length > 0) {
+      text += `*${heading}*\n`;
+      text += uncheckedItems.join('\n') + '\n\n';
+    }
   });
   navigator.clipboard.writeText(text).then(() => {
     const confirm = document.getElementById('copyConfirm');
