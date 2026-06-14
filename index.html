@@ -35,6 +35,7 @@
   .meal-card.mom { border-left-color: #e8a0c8; }
 
   .mom-tag { display: inline-block; background: #fce8f4; color: #8b2a6b; font-size: 0.7rem; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cook-tag { display: inline-block; background: #fff3e8; color: #8b4a10; font-size: 0.7rem; font-weight: 700; padding: 2px 7px; border-radius: 20px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
   .meal-occasion { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #888; margin-bottom: 3px; }
   .meal-name { font-size: 0.95rem; font-weight: 700; color: #2c2c2c; margin-bottom: 8px; line-height: 1.3; }
   .protein-badge { display: inline-block; background: #eaf5ee; color: #2e6b42; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
@@ -56,12 +57,10 @@
 
   .dinner-section { margin-top: 4px; }
 
-  /* Batch cards */
   .batch-card { background: #fff8ec; border: 1.5px dashed #f0a05a; border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
   .batch-card h3 { color: #b05a10; font-size: 0.95rem; font-weight: 700; margin-bottom: 5px; }
   .batch-card p { font-size: 0.85rem; color: #555; margin-bottom: 8px; }
 
-  /* Shopping list */
   .shop-section { margin-bottom: 22px; }
   .shop-section h3 { font-size: 0.9rem; font-weight: 700; color: #3d6b4f; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 8px; padding-bottom: 5px; border-bottom: 1px solid #d4e8dc; }
   .shop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 5px; }
@@ -87,7 +86,7 @@
 
 <header>
   <h1>Landi Meal Planning</h1>
-  <p>Monday 8 June – Saturday 13 June 2026 &nbsp;·&nbsp; High protein · Low fat · Low sugar</p>
+  <p>Monday 15 June – Sunday 21 June 2026 &nbsp;·&nbsp; High protein · Low fat · Low sugar</p>
 </header>
 
 <div class="targets-bar">
@@ -97,26 +96,27 @@
 </div>
 
 <nav>
-  <button class="active" onclick="showPage('mon8')">Mon 8 Jun</button>
-  <button onclick="showPage('tue9')">Tue 9 Jun</button>
-  <button onclick="showPage('wed10')">Wed 10 Jun</button>
-  <button onclick="showPage('thu11')">Thu 11 Jun</button>
-  <button onclick="showPage('fri12')">Fri 12 Jun</button>
-  <button onclick="showPage('sat13')">Sat 13 Jun</button>
+  <button class="active" onclick="showPage('mon15')">Mon 15 Jun</button>
+  <button onclick="showPage('tue16')">Tue 16 Jun</button>
+  <button onclick="showPage('wed17')">Wed 17 Jun</button>
+  <button onclick="showPage('thu18')">Thu 18 Jun</button>
+  <button onclick="showPage('fri19')">Fri 19 Jun</button>
+  <button onclick="showPage('sat20')">Sat 20 Jun</button>
+  <button onclick="showPage('sun21')">Sun 21 Jun</button>
   <button onclick="showPage('batch')">🫙 Batch</button>
   <button onclick="showPage('shopping')">🛒 Shop</button>
 </nav>
 
 <!-- ==================== BATCH PREP ==================== -->
 <div id="batch" class="page">
-  <div class="day-label">Batch Prep Guide — Week of 8 June</div>
+  <div class="day-label">Batch Prep Guide — Week of 15 June</div>
 
   <div class="batch-card">
-    <h3>🥚 Hard-Boiled Eggs — Batch 1 (Sunday evening or Monday evening)</h3>
-    <p>Make 8–10 eggs. Covers Mon–Thu afternoon snacks. Store unpeeled in fridge — last 5–6 days.</p>
+    <h3>🥚 Hard-Boiled Eggs — Batch 1 (Monday evening)</h3>
+    <p>Boil 8 eggs. Covers Mon/Wed/Fri afternoon snacks for Landi + Mom (×2 people × 3 days = 12 eggs). Store unpeeled in fridge up to 6 days.</p>
     <div class="method"><h4>Method</h4><ol>
-      <li>Place 8–10 eggs in a pot, cover with cold water by 2 cm.</li>
-      <li>Bring to a boil, reduce to gentle simmer, cook 10 minutes.</li>
+      <li>Place 8 eggs in a pot, cover with cold water by 2 cm.</li>
+      <li>Bring to a boil, reduce to a gentle simmer, cook 10 minutes.</li>
       <li>Transfer to iced water for 5 minutes. Store unpeeled in a sealed container in fridge.</li>
       <li>Per serving: peel 2 eggs, halve, drizzle 5 ml soy sauce.</li>
     </ol></div>
@@ -124,106 +124,103 @@
 
   <div class="batch-card">
     <h3>🥚 Hard-Boiled Eggs — Batch 2 (Wednesday evening)</h3>
-    <p>Second batch of 6–8 eggs. Covers Thu–Sat afternoon snacks.</p>
-    <div class="method"><h4>Method</h4><ol>
-      <li>Same method as Batch 1 above.</li>
-    </ol></div>
+    <p>Boil 8 more eggs. Covers Thu/Sat/Sun afternoon snacks and any gaps. Same method as Batch 1.</p>
   </div>
 
   <div class="batch-card">
     <h3>🍖 Lamb Liver Cakes — Check stock</h3>
-    <p>You should have a batch in the fridge and freezer from last week (Mom). Check how many remain — aim to have at least 6 for this week (Mon MS, Wed MS, Sat MS).</p>
-    <div class="note-info" style="margin-top:8px"><strong>~12–14 g protein per cake.</strong> Reheat from frozen at 160 °C for 6–8 min in air fryer. If running low, Mom can make a new batch using the same recipe (500 g minced lamb liver, 1 potato, 2 eggs, 1 onion, 125 g self-raising flour, paprika, salt and pepper — air fry at 180 °C 10–12 min).</div>
+    <p>You should have a batch in the fridge (and some in the freezer). Check remaining count. You need at least 8 cakes for Mon mid-morning, Tue afternoon, Thu mid-morning, and Fri mid-morning (×2 people = 4 occasions × 2 cakes each = 16 cakes). If running low, Mom can make a new batch.</p>
+    <div class="note-info" style="margin-top:8px"><strong>~12–14 g protein per cake.</strong> Reheat from frozen at 160 °C for 6–8 min in air fryer, or 2 min in microwave. Recipe: 500 g minced lamb liver, 1 potato, 2 eggs, 1 onion, 125 g self-raising flour, paprika, salt and pepper — air fry at 180 °C 10–12 min.</div>
   </div>
 
   <div class="batch-card">
-    <h3>🍗 Defrost Reminder — Mom's Proteins</h3>
-    <p>Move from freezer to fridge the evening before each dinner.</p>
+    <h3>🍗 Defrost Schedule — Mom's Proteins (Mon–Fri) + Weekend</h3>
+    <p>Move proteins from freezer to fridge the evening before each dinner. Do not defrost at room temperature.</p>
     <div class="method"><h4>Schedule</h4><ol>
-      <li><strong>Sun evening (tonight):</strong> Defrost pork → Mon dinner</li>
-      <li><strong>Mon evening:</strong> Defrost skinless deboned chicken thighs (1 pack of 8) → Tue dinner</li>
-      <li><strong>Tue evening:</strong> Defrost lamb chops → Wed dinner</li>
-      <li><strong>Wed evening:</strong> Defrost bone-in chicken thighs (1 pack of 4) → Thu dinner</li>
-      <li><strong>Thu evening:</strong> Defrost boerewors → Fri dinner</li>
-      <li><strong>Fri evening:</strong> Defrost pot stickers + lamb dumplings → Sat dinner (Landi)</li>
+      <li><strong>Sun evening (tonight):</strong> Defrost 1 × 500 g warthog mince → Monday bolognese</li>
+      <li><strong>Mon evening:</strong> Defrost boerewors → Tuesday dinner</li>
+      <li><strong>Tue evening:</strong> Defrost crumbled chicken steaklets → Wednesday dinner</li>
+      <li><strong>Wed evening:</strong> Defrost 1 × 500 g warthog mince → Thursday cottage pie</li>
+      <li><strong>Thu evening:</strong> Defrost snoek → Friday dinner</li>
+      <li><strong>Fri evening:</strong> Defrost pot stickers (10 pc) + BBQ pork bao buns (6 pc) → Saturday dinner</li>
+      <li><strong>Sat evening:</strong> Defrost lamb knuckle → Sunday dinner</li>
     </ol></div>
   </div>
 </div>
 
-<!-- ==================== MON 8 JUNE ==================== -->
-<div id="mon8" class="page active">
-  <div class="day-label">Monday 8 June <span class="day-meta">Mom cooks dinner · ×4</span></div>
+<!-- ==================== MON 15 JUNE ==================== -->
+<div id="mon15" class="page active">
+  <div class="day-label">Monday 15 June <span class="day-meta">Mom cooks dinner · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + Mom)</span></div>
 
   <div class="meals-grid">
     <div class="meal-card">
       <div class="meal-occasion">Breakfast · ~08:00</div>
-      <div class="meal-name">Smoked Mackerel Scrambled Eggs with Cucumber &amp; Tomato</div>
-      <span class="protein-badge">~28 g protein</span>
+      <div class="meal-name">Protein Scrambled Eggs with Cottage Cheese, Cucumber &amp; Tomato</div>
+      <span class="protein-badge">~21 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
         <li>2 large eggs</li>
-        <li>20 ml lactose-free milk</li>
-        <li>80 g smoked mackerel (from fridge — use now), flaked</li>
+        <li>50 g low-fat smooth cottage cheese (stirred directly into beaten eggs)</li>
         <li>5 ml olive oil</li>
-        <li>Cucumber slices + 2–3 slices tomato</li>
-        <li>Black pepper · fresh chives (fridge)</li>
+        <li>Cucumber slices + 2–3 slices tomato (fridge)</li>
+        <li>2 Provita Maize Crackerbread (on the side)</li>
+        <li>Black pepper · fresh chives if available</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Whisk eggs with milk, season well with black pepper.</li>
-        <li>Heat olive oil in a non-stick pan over low-medium heat. Add eggs. Stir slowly with a spatula — low and slow makes them creamy.</li>
-        <li>Just before fully set, fold in flaked smoked mackerel. Remove from heat — residual heat finishes them.</li>
-        <li>Serve with cucumber and tomato on the side. Top with chives.</li>
+        <li>Beat eggs well. Stir cottage cheese into the beaten eggs — lumpy is fine, it melts smooth.</li>
+        <li>Heat olive oil in a non-stick pan over low-medium heat. Add egg and cottage cheese mixture.</li>
+        <li>Stir slowly with a spatula. The cottage cheese doubles the protein with almost no change in volume — great for small bariatric portions.</li>
+        <li>Remove from heat when just set. Serve with cucumber, tomato, and crackerbreads on the side.</li>
+        <li><strong>Protein first:</strong> eat the eggs before the crackerbreads.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Use the smoked mackerel today — fridge priority item. Rich and filling winter breakfast.</div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Duck Liver Pâté on Crackerbread</div>
-      <span class="protein-badge">~10 g protein</span>
+      <div class="meal-name">Lamb Liver Cakes ×2</div>
+      <span class="protein-badge">~26 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>40 g duck liver pâté (fridge — use now, needs finishing in 2 days)</li>
-        <li>2 Provita Maize Crackerbread</li>
-        <li>Cucumber slices on the side</li>
+        <li>2 lamb liver cakes (from fridge batch — use fridge stock first)</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Spread pâté on crackerbreads. Grab and go.</li>
-        <li>If there is pâté left after today, finish it tomorrow (Tue) as mid-morning snack.</li>
+        <li>Reheat in air fryer at 160 °C for 5–6 min, or 90 seconds in microwave.</li>
+        <li>If defrosting from freezer: air fryer at 160 °C for 8 min from frozen.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Duck liver pâté needs using in the next 2 days. Good iron source.</div>
     </div>
 
     <div class="meal-card">
       <div class="meal-occasion">Lunch · ~13:00</div>
-      <div class="meal-name">Avocado &amp; Cottage Cheese Bowl with Soft-Boiled Egg</div>
-      <span class="protein-badge">~23 g protein</span>
+      <div class="meal-name">Red Miso &amp; Tuna Udon Soup</div>
+      <span class="protein-badge">~17 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>100 g low-fat smooth cottage cheese (fridge)</li>
-        <li>½ ripe avocado (fridge — use now)</li>
-        <li>1 large egg, soft-boiled (7 min from boiling)</li>
-        <li>Cucumber slices + 2–3 tomato slices</li>
-        <li>Fresh chives, chopped</li>
-        <li>5 ml lemon juice · black pepper</li>
-        <li>2 Provita Maize Crackerbread (on the side)</li>
+        <li>60 g dry udon noodles (cook per packet, usually 3–4 min in boiling water)</li>
+        <li>350 ml chicken or bone broth (stock cube or bone broth concentrate in hot water)</li>
+        <li>15 g red miso paste (fridge) — dissolved separately in a ladle of hot broth</li>
+        <li>60 g canned tuna in brine, drained (about half a standard can — share 1 can between 2 for lunch)</li>
+        <li>5 ml pureed ginger (fridge) · 5 ml soy sauce · 3–4 drops sesame oil</li>
+        <li>Cucumber slices or a few carrot ribbons on the side</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Soft-boil egg: place in boiling water 7 minutes, then cold water 2 min. Peel and halve.</li>
-        <li>Mash avocado with lemon juice, pepper and chives.</li>
-        <li>Spoon cottage cheese into a bowl. Add mashed avocado alongside. Top with egg halves.</li>
-        <li>Arrange cucumber and tomato on the side. Crackerbreads on the side — eat protein first.</li>
+        <li>Bring broth to a simmer. Add ginger. Simmer 2 minutes.</li>
+        <li>Cook udon noodles separately in boiling water per packet. Drain and add to bowl.</li>
+        <li>Dissolve red miso in a ladle of the hot broth first, then stir back into the pot. Do not boil after adding miso.</li>
+        <li>Pour miso broth over noodles. Top with drained tuna, drizzle soy and sesame oil.</li>
+        <li><strong>Landi's portion:</strong> small bowl — eat tuna first, then noodles, sip broth last.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Use avocado today — they're ripe now. Second avocado for Tuesday breakfast or lunch.</div>
+      <div class="note-info" style="margin-top:8px">Use red miso today for a deeper, more robust flavour — great on a winter Monday. Save white miso for later in the week.</div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
       <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
-      <span class="protein-badge">~13 g protein</span>
+      <span class="protein-badge">~13 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>2 eggs (from tonight's batch — make Batch 1 tonight)</li>
+        <li>2 eggs (from tonight's Batch 1 — cook eggs this evening)</li>
         <li>5 ml soy sauce</li>
       </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Peel, halve, drizzle soy. Eat.</li></ol></div>
-      <div class="note-info" style="margin-top:8px"><strong>Batch tonight:</strong> Boil 8–10 eggs this evening — covers Mon–Thu afternoon snacks.</div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Peel, halve, drizzle soy. Eat.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px"><strong>Batch tonight:</strong> Boil 8 eggs this evening for Mon–Wed/Fri afternoon snacks. See Batch tab.</div>
     </div>
   </div>
 
@@ -231,203 +228,215 @@
     <div class="meal-card mom">
       <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
       <div class="meal-occasion">Dinner · ~18:30</div>
-      <div class="meal-name">Braised Pork with Courgette, Green Beans &amp; Tomatoes</div>
-      <span class="protein-badge">~26 g protein (Landi's portion)</span>
+      <div class="meal-name">Warthog Mince Bolognese with Penne</div>
+      <span class="protein-badge">~28 g protein (Landi's portion)</span>
       <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
-        <li>Pork (from freezer — defrost today/Sunday), approx. 700–900 g</li>
-        <li>4 large courgette, cut into thick rounds (2 cm) — use now, fridge priority</li>
-        <li>Large handful green beans, trimmed — use now, fridge priority</li>
-        <li>1 tin (400 g) chopped tomatoes (pantry)</li>
-        <li>1 large onion, chopped · 4 garlic cloves, minced</li>
-        <li>10 ml tomato sauce (pantry) · 5 ml olive oil</li>
-        <li>5 g paprika · 5 g dried mixed herbs · salt and pepper</li>
+        <li>1 × 500 g warthog mince (defrost Sun evening)</li>
+        <li>Penne pasta (pantry) — cook 320 g dry for the family; Landi's portion: 60 g dry = ~150 g cooked</li>
+        <li>3 medium tomatoes (fridge), roughly chopped — or 1 tin chopped tomatoes if preferred</li>
+        <li>1 green pepper (to buy), deseeded and diced</li>
+        <li>2 medium onions, diced (pantry)</li>
+        <li>4 cloves fresh garlic, minced (fridge)</li>
+        <li>1 beef stock cube dissolved in 100 ml hot water</li>
+        <li>5 ml olive oil · 5 g dried mixed herbs (oregano, basil) · salt and pepper</li>
+        <li>Optional: 15 ml tomato paste if available, or 10 ml onion sauce (pantry)</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Brown pork in olive oil over medium-high heat, 3 min per side.</li>
-        <li>Add onion and garlic, cook 2 min. Add chopped tomatoes, tomato sauce, paprika, herbs, salt and pepper.</li>
-        <li>Cover and simmer on low 40–45 min until pork is very tender. Add a splash of water if drying out.</li>
-        <li>Add courgette rounds and green beans in the last 10 minutes — tender but not mushy.</li>
-        <li><strong>Landi's plate:</strong> 100–120 g pork + 2–3 tbsp tomato sauce + courgette and green beans. No butter. Protein first.</li>
+        <li>Heat olive oil in a large pot over medium-high heat. Brown the warthog mince in batches, breaking up well. Do not crowd the pan. Set aside.</li>
+        <li>In the same pot, sauté onion 3–4 min until soft. Add garlic and green pepper, cook 2 min more.</li>
+        <li>Return mince to the pot. Add chopped tomatoes, beef stock, herbs, salt and pepper. Stir well.</li>
+        <li>Cover and simmer on low heat for 25–30 min, stirring occasionally. Add a splash of water if it thickens too much.</li>
+        <li>Cook penne in a separate pot of salted boiling water until al dente. Drain.</li>
+        <li><strong>Landi's plate:</strong> 100–120 g mince sauce (weigh the mince portion) + 60 g cooked penne. No added cheese or cream on Landi's portion. Protein first — eat the mince before the pasta.</li>
       </ol></div>
-      <div class="note"><strong>Note for Mom:</strong> No cream or butter on Landi's portion. Add all the courgette and green beans to the pot — they need to be finished today.</div>
+      <div class="note"><strong>Note for Mom:</strong> No cream or cheese on Landi's portion. Warthog is leaner than beef — it will cook slightly faster. The green pepper must go in — it is good for Landi.</div>
     </div>
   </div>
 
   <div class="day-totals">
-    <div class="stat"><div class="val">~100 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">~105 g</div><div class="lbl">Protein (est.)</div></div>
     <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
     <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
   </div>
 </div>
 
-<!-- ==================== TUE 9 JUNE ==================== -->
-<div id="tue9" class="page">
-  <div class="day-label">Tuesday 9 June <span class="day-meta">Mom cooks dinner · ×4</span></div>
+<!-- ==================== TUE 16 JUNE ==================== -->
+<div id="tue16" class="page">
+  <div class="day-label">Tuesday 16 June <span class="day-meta">Mom cooks dinner · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + Mom)</span></div>
 
   <div class="meals-grid">
     <div class="meal-card">
       <div class="meal-occasion">Breakfast · ~08:00</div>
-      <div class="meal-name">Double Greek Yogurt with Strawberries &amp; Soft-Boiled Egg</div>
-      <span class="protein-badge">~21 g protein</span>
+      <div class="meal-name">Soft-Boiled Eggs ×2 with Lactose-Free Yogurt</div>
+      <span class="protein-badge">~19 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>150 g double Greek yogurt (fridge)</li>
-        <li>80 g strawberries (fridge), hulled and halved</li>
-        <li>1 large egg, soft-boiled (7 min from boiling)</li>
-        <li>Optional: 1 tsp plant-based protein powder stirred into yogurt</li>
+        <li>2 large eggs, soft-boiled (7 min from boiling)</li>
+        <li>100 g lactose-free plain yogurt (fridge)</li>
+        <li>2 Provita Maize Crackerbread (on the side)</li>
+        <li>5 ml soy sauce for eggs · black pepper</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Soft-boil egg: 7 min from boiling water, then cold water. Peel and serve on the side.</li>
-        <li>Spoon yogurt into a bowl. Top with strawberries.</li>
-        <li>If using protein powder, stir it into the yogurt first — chocolate flavour works well with the berries.</li>
-        <li>Eat egg alongside — protein first, then the yogurt bowl.</li>
+        <li>Soft-boil eggs: lower into gently boiling water, cook 7 min. Transfer to cold water, peel carefully.</li>
+        <li>Halve eggs and drizzle with soy sauce.</li>
+        <li>Serve yogurt in a small bowl alongside. Eat eggs first — protein first.</li>
+        <li>Crackerbreads on the side (max 2 per occasion).</li>
       </ol></div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Duck Liver Pâté on Crackerbread — Finish Today</div>
-      <span class="protein-badge">~10 g protein</span>
+      <div class="meal-name">Double Greek Yogurt with Strawberries — Finish Today</div>
+      <span class="protein-badge">~13 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>Remaining duck liver pâté (fridge — last day)</li>
-        <li>2 Provita Maize Crackerbread</li>
-        <li>Cucumber slices on the side</li>
+        <li>150 g double Greek yogurt (fridge) — take MilkAid with this</li>
+        <li>All remaining strawberries (fridge) — use them up today</li>
+        <li>Optional: 1 tsp chocolate protein powder stirred in for a boost</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Spread remaining pâté on crackerbreads. Finish the batch today.</li>
-        <li>If pâté is already finished: 1 can sardines in brine + 2 crackerbread + tomato — ~17 g protein.</li>
+        <li>Hull and halve strawberries. Spoon yogurt into a bowl. Top with strawberries.</li>
+        <li>Remember MilkAid — double Greek is not lactose-free.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Last chance for the pâté. Sardine substitute gives you a protein bump if needed.</div>
+      <div class="note-info" style="margin-top:8px">Strawberries need using today — they won't last much longer. This finishes them.</div>
     </div>
 
     <div class="meal-card">
       <div class="meal-occasion">Lunch · ~13:00</div>
-      <div class="meal-name">Gochujang Chicken Rice Bowl</div>
-      <span class="protein-badge">~27 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>100 g boneless chicken thigh, cooked (see method below)</li>
-        <li>60 g cooked short-grain Japanese rice</li>
-        <li>Sauce: 5 ml gochujang paste · 10 ml soy sauce · 5 ml mirin · 3–4 drops sesame oil · 5 ml rice vinegar</li>
-        <li>Cucumber slices + carrot ribbons (peeler on fridge carrots)</li>
-        <li>Chives, chopped</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li><strong>Cook chicken:</strong> Defrost 1–2 boneless thighs. Season lightly. Pan-fry in a dry non-stick pan over medium heat 4–5 min per side until cooked through. Slice into strips.</li>
-        <li><strong>Rice:</strong> Cook 60 g dry short-grain rice in Instant Pot (equal volume water, pressure 3 min, natural release 10 min). Or cook a larger batch and refrigerate.</li>
-        <li><strong>Sauce:</strong> Whisk gochujang, soy, mirin, sesame oil and rice vinegar together in a small bowl.</li>
-        <li>Assemble: rice first in a bowl, chicken on top, drizzle sauce over, arrange cucumber and carrot alongside. Top with chives.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">Gochujang heat level confirmed tolerable — enjoy! Adjust the amount of paste to taste.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
-      <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
-      <span class="protein-badge">~13 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>2 eggs (from Monday's batch) · 5 ml soy sauce</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Peel, halve, drizzle. Eat.</li></ol></div>
-    </div>
-  </div>
-
-  <div class="dinner-section">
-    <div class="meal-card mom">
-      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
-      <div class="meal-occasion">Dinner · ~18:30</div>
-      <div class="meal-name">Soy &amp; Ginger Chicken Thighs with Roasted Butternut &amp; Peas</div>
-      <span class="protein-badge">~25 g protein (Landi's portion)</span>
-      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
-        <li>8 skinless deboned chicken thighs (defrost Mon evening from pack of 8)</li>
-        <li>Marinade: 30 ml soy sauce · 20 ml mirin · 15 ml roasted garlic &amp; onion puree (fridge) · 5 ml pureed ginger (fridge) · 5 ml sesame oil · 5 ml olive oil</li>
-        <li>1 medium butternut squash, peeled, cubed (2–3 cm)</li>
-        <li>1 can peas in brine, drained and heated</li>
-        <li>Any leftover courgette or green beans from Monday — add to roasting tray</li>
-        <li>Salt and pepper · olive oil for butternut</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Mix marinade ingredients. Pour over chicken thighs. Marinate 30 minutes (or overnight in fridge).</li>
-        <li>Preheat oven to 200 °C. Toss butternut cubes in olive oil, salt and pepper. Roast 25–30 min. Add any remaining courgette/green beans to the tray in the last 10 min.</li>
-        <li>Place chicken thighs in a baking dish. Bake at 200 °C for 20–22 min until cooked through. Or air fry at 190 °C for 16–18 min.</li>
-        <li>Heat peas in a saucepan or microwave 2 minutes. Drain.</li>
-        <li><strong>Landi's plate:</strong> 2 thighs (100–120 g) + 60 g butternut + 3 tbsp peas. Small portion rice optional. Protein first.</li>
-      </ol></div>
-      <div class="note"><strong>Note for Mom:</strong> No extra butter or sauce on Landi's portion. A spoonful of the marinade pan juices over Landi's chicken is fine.</div>
-    </div>
-  </div>
-
-  <div class="day-totals">
-    <div class="stat"><div class="val">~96 g</div><div class="lbl">Protein (est.)</div></div>
-    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
-    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
-  </div>
-</div>
-
-<!-- ==================== WED 10 JUNE ==================== -->
-<div id="wed10" class="page">
-  <div class="day-label">Wednesday 10 June <span class="day-meta">Mom cooks dinner · ×4</span></div>
-
-  <div class="meals-grid">
-    <div class="meal-card">
-      <div class="meal-occasion">Breakfast · ~08:00</div>
-      <div class="meal-name">Cottage Cheese Scrambled Eggs with Tomato &amp; Chives</div>
-      <span class="protein-badge">~18 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>2 large eggs</li>
-        <li>50 g low-fat smooth cottage cheese (stirred into eggs — makes them extra creamy)</li>
-        <li>5 ml olive oil</li>
-        <li>3 slices tomato · salt and black pepper</li>
-        <li>Fresh chives, chopped (fridge)</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Whisk eggs well. Stir in cottage cheese — lumpy is fine, it softens as it cooks.</li>
-        <li>Heat olive oil in a non-stick pan on low-medium. Add egg mixture.</li>
-        <li>Stir slowly and continuously. The cottage cheese makes these fluffy and protein-dense without any dairy heaviness.</li>
-        <li>Remove from heat when just set — carry-over heat finishes them. Top with chives, serve with tomato.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">Cottage cheese in eggs is a bariatric trick — nearly doubles the protein with no change in volume.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Air-Fryer Liver Cake</div>
-      <span class="protein-badge">~13 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>1 lamb liver cake from freezer</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Reheat from frozen at 160 °C for 6–8 min in air fryer. Grab and go.</li>
-      </ol></div>
-    </div>
-
-    <div class="meal-card">
-      <div class="meal-occasion">Lunch · ~13:00</div>
-      <div class="meal-name">Warm Sardine Couscous Bowl</div>
-      <span class="protein-badge">~25 g protein</span>
+      <div class="meal-name">Warm Sardine &amp; Couscous Bowl</div>
+      <span class="protein-badge">~21 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
         <li>60 g dry couscous</li>
-        <li>120 ml hot chicken stock (pantry) — for cooking couscous instead of water</li>
-        <li>1 can sardines in brine, drained (~85 g), roughly flaked</li>
-        <li>1 hard-boiled egg (from Monday's batch), halved</li>
-        <li>1 tomato, diced · handful cucumber, diced</li>
-        <li>10 ml ponzu sauce (or soy + squeeze lemon) · black pepper · dried herbs</li>
+        <li>120 ml hot chicken stock (stock cube + boiling water) — for cooking couscous</li>
+        <li>1 can sardines in brine (~85 g drained), roughly flaked</li>
+        <li>1 tomato (fridge), diced · a few cucumber slices</li>
+        <li>10 ml ponzu sauce (or soy + squeeze lemon juice)</li>
+        <li>Black pepper · dried herbs</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
         <li>Pour hot chicken stock over couscous in a bowl. Cover with a plate. Leave 5 minutes. Fluff with a fork.</li>
-        <li>Arrange couscous in bowl. Top with flaked sardines, egg halves, tomato and cucumber.</li>
+        <li>Arrange couscous in the bowl. Top with flaked sardines, diced tomato, and cucumber.</li>
         <li>Drizzle ponzu over. Season with pepper and herbs.</li>
+        <li><strong>Eat sardines first.</strong></li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Couscous cooks in the chicken stock instead of water — adds flavour and a little extra nutrition.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
+      <div class="meal-name">Lamb Liver Cakes ×2</div>
+      <span class="protein-badge">~26 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>2 lamb liver cakes (from fridge, or defrost from freezer)</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Reheat in air fryer at 160 °C for 6–8 min (from frozen) or 5 min (from fridge). Or microwave 90 sec.</li>
+      </ol></div>
+    </div>
+  </div>
+
+  <div class="dinner-section">
+    <div class="meal-card mom">
+      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
+      <div class="meal-occasion">Dinner · ~18:30</div>
+      <div class="meal-name">Boerewors with Gem Squash &amp; Butter Beans in Curry Sauce</div>
+      <span class="protein-badge">~22 g protein (Landi's portion)</span>
+      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
+        <li>Boerewors (from freezer — defrost Mon evening), approx. 600–700 g</li>
+        <li>2 gem squash — halve each to give 4 halves (one per person); remove seeds after cooking</li>
+        <li>1 can butter beans in curry sauce (pantry) — warmed in a small pot</li>
+        <li>White rice (pantry) — cook for family; Landi skips or has a very small scoop</li>
+        <li>Salt and pepper</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li><strong>Gem squash:</strong> Place whole squash in microwave (pierce skin 3–4 times). Microwave on high 8–10 min, turning halfway, until tender. Halve, scoop out seeds. Or: halve first, brush with olive oil, oven-roast at 180 °C for 30 min cut-side down.</li>
+        <li><strong>Boerewors:</strong> Cook in a large dry pan over medium heat — keep the coil intact, do not pierce. 5–7 min per side until browned and cooked through. Alternatively oven at 180 °C for 25–30 min.</li>
+        <li><strong>Butter beans:</strong> Empty can into a small pot. Warm over medium-low heat, stirring occasionally, 5 min. Season to taste.</li>
+        <li>Cook rice per packet for the family.</li>
+        <li><strong>Landi's plate:</strong> 100 g boerewors + 1 gem squash half (scoop out the flesh and eat it) + 4 heaped tbsp butter beans in curry sauce. No rice for Landi unless she wants a very small scoop. Protein first.</li>
+      </ol></div>
+      <div class="note"><strong>Note for Mom:</strong> Boerewors has some fat — keep Landi's portion to 100 g. The gem squash flesh is soft and easy to eat — encourage her to scoop it all out. No butter in Landi's squash.</div>
+    </div>
+  </div>
+
+  <div class="day-totals">
+    <div class="stat"><div class="val">~101 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
+    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
+  </div>
+</div>
+
+<!-- ==================== WED 17 JUNE ==================== -->
+<div id="wed17" class="page">
+  <div class="day-label">Wednesday 17 June <span class="day-meta">Mom cooks dinner · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + Mom)</span></div>
+
+  <div class="meals-grid">
+    <div class="meal-card">
+      <div class="meal-occasion">Breakfast · ~08:00</div>
+      <div class="meal-name">Chinese Tomato &amp; Egg Stir-Fry (番茄炒蛋) with Short-Grain Rice</div>
+      <span class="protein-badge">~20 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>3 large eggs, beaten well</li>
+        <li>1 medium tomato (fridge), roughly chopped into 6–8 pieces</li>
+        <li>5 ml sesame oil</li>
+        <li>10 ml soy sauce</li>
+        <li>1 Huletts EquiSweet sachet (or pinch regular sugar — small amount only)</li>
+        <li>60 g cooked short-grain Japanese rice (small winter scoop)</li>
+        <li>Pinch of salt</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Beat 3 eggs well with a pinch of salt.</li>
+        <li>Heat sesame oil in a non-stick pan over medium-high. Pour in eggs — let set for 5 sec, then scramble gently into large soft curds. Push to the side.</li>
+        <li>Add tomato to the empty side. Cook 1–2 min until tomato softens and releases juices.</li>
+        <li>Mix gently. Add soy sauce and sweetener. Toss together — another 30 seconds off heat.</li>
+        <li>Serve over warm rice. Total cook time under 5 minutes.</li>
+        <li><strong>Eat eggs and tomato before finishing the rice.</strong></li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Classic Chinese home breakfast. The tomato becomes silky as the juices mingle into the egg. Rich, savoury, 5 minutes.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
+      <div class="meal-name">Cottage Cheese on Crackerbread</div>
+      <span class="protein-badge">~10 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>70 g low-fat smooth cottage cheese (fridge)</li>
+        <li>2 Provita Maize Crackerbread</li>
+        <li>Cucumber slices on the side · black pepper</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Spread cottage cheese generously on crackerbreads. Season with pepper. Eat.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-occasion">Lunch · ~13:00</div>
+      <div class="meal-name">Canned Mackerel &amp; Gochujang Rice Bowl</div>
+      <span class="protein-badge">~20 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>1 can canned mackerel (pantry), drained and roughly flaked</li>
+        <li>60 g cooked short-grain Japanese rice</li>
+        <li>Sauce: 5 ml gochujang paste · 10 ml soy sauce · 5 ml rice vinegar · 3–4 drops sesame oil · 5 ml mirin</li>
+        <li>Cucumber, thinly sliced · carrot ribbons (peeler on a fridge carrot)</li>
+        <li>5 ml pureed ginger (fridge)</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Whisk gochujang, soy sauce, rice vinegar, sesame oil, mirin, and ginger in a small bowl.</li>
+        <li>Place warm rice in a bowl. Top with flaked mackerel.</li>
+        <li>Arrange cucumber and carrot ribbons alongside. Drizzle sauce over everything.</li>
+        <li><strong>Eat mackerel first.</strong> Gochujang adds flavour and warmth — adjust amount to taste.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Korean-inspired bibimbap style. The gochujang sauce is the same base as Week 2 chicken bowl — adjust heat level freely.</div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
       <div class="meal-name">Hard-Boiled Eggs ×2 — Batch Day</div>
-      <span class="protein-badge">~13 g protein</span>
+      <span class="protein-badge">~13 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>2 eggs (last of Monday's batch) · 5 ml soy sauce</li>
+        <li>2 eggs (from Monday's Batch 1) · 5 ml soy sauce</li>
       </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Peel, halve, drizzle. Eat.</li></ol></div>
-      <div class="note-info" style="margin-top:8px"><strong>Batch tonight:</strong> Boil 6–8 more eggs this evening — covers Thu–Sat snacks.</div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Peel, halve, drizzle. Eat.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px"><strong>Batch tonight (Batch 2):</strong> Boil 8 more eggs this evening — covers Thu/Sat/Sun afternoon snacks.</div>
     </div>
   </div>
 
@@ -435,23 +444,227 @@
     <div class="meal-card mom">
       <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
       <div class="meal-occasion">Dinner · ~18:30</div>
-      <div class="meal-name">Baked Lamb Chops with Roasted Potato Wedges &amp; Green Pepper</div>
+      <div class="meal-name">Air-Fried Chicken Steaklets with Soft Polenta &amp; Roasted Butternut</div>
       <span class="protein-badge">~27 g protein (Landi's portion)</span>
       <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
-        <li>Lamb chops (from freezer — defrost Tue evening), approx. 1 kg</li>
-        <li>Marinade: 30 ml olive oil · 4 garlic cloves, minced · 10 g rosemary · juice ½ lemon · salt and pepper</li>
-        <li>4–5 medium potatoes (fresh produce), cut into wedges</li>
-        <li>2 green peppers (fresh produce), deseeded and cut into strips</li>
-        <li>Drizzle olive oil · salt and pepper for veg</li>
+        <li>Crumbled chicken steaklets (from freezer — defrost Tue evening), approx. 600–800 g</li>
+        <li>1 medium butternut squash (pantry), peeled, deseeded, cubed into 2 cm pieces</li>
+        <li>3–4 carrots (fridge), peeled and cut into thick batons</li>
+        <li>Polenta: 200 g dry polenta (pantry) + 800 ml chicken stock (stock cubes) — for soft creamy polenta</li>
+        <li>Olive oil for roasting veg · salt and pepper · paprika or dried herbs for butternut</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Rub lamb chops with olive oil, garlic, rosemary, lemon juice, salt and pepper. Rest 15 min.</li>
-        <li>Preheat oven to 200 °C. Toss potato wedges in olive oil, salt and pepper. Roast 25 min.</li>
-        <li>Toss green pepper strips in a little oil. Add to potato tray in last 15 min.</li>
-        <li>Add lamb chops to a separate tray or push veg aside. Roast lamb 15–18 min for medium. Rest 5 min before serving.</li>
-        <li><strong>Landi's plate:</strong> 2 small lamb chops (90–110 g meat, trim visible fat) + green pepper strips + a small potato wedge if room. Protein first.</li>
+        <li><strong>Roasted butternut &amp; carrots:</strong> Preheat oven to 200 °C. Toss butternut cubes and carrot batons in olive oil, salt, pepper, and a pinch of paprika. Spread on a baking tray. Roast 25–30 min until golden and tender.</li>
+        <li><strong>Chicken steaklets — air fryer:</strong> Place in air fryer basket in a single layer (do in batches if needed). Air fry at 190 °C for 14–16 min until golden and crispy, turning halfway. Check packaging instructions — most crumbed steaklets take this range.</li>
+        <li><strong>Soft polenta:</strong> Bring 800 ml chicken stock to a simmer in a medium pot. Pour in polenta in a thin stream, whisking constantly. Reduce heat to low. Stir continuously for 5–7 min until thick and smooth. Season with salt and pepper. Add a splash more stock if it thickens too much.</li>
+        <li><strong>Landi's plate:</strong> 1–2 chicken steaklets (120 g total) + 80 g soft polenta + 80 g roasted butternut + a few carrot batons. Protein first — eat the chicken before the polenta. Small polenta portion for Landi (it is filling).</li>
       </ol></div>
-      <div class="note"><strong>Note for Mom:</strong> No gravy or sauce on Landi's portion. Green pepper is great for Landi — encourage her to eat it.</div>
+      <div class="note"><strong>Note for Mom:</strong> No butter in Landi's polenta — use chicken stock only. Soft polenta is gentle on the stomach and easy to eat. A small portion for Landi is fine — the chicken is the priority. Use any leftover roasted butternut for Landi's lunch or snack Thursday.</div>
+    </div>
+  </div>
+
+  <div class="day-totals">
+    <div class="stat"><div class="val">~90 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
+    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
+  </div>
+</div>
+
+<!-- ==================== THU 18 JUNE ==================== -->
+<div id="thu18" class="page">
+  <div class="day-label">Thursday 18 June <span class="day-meta">Mom cooks dinner · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + Mom)</span></div>
+
+  <div class="meals-grid">
+    <div class="meal-card">
+      <div class="meal-occasion">Breakfast · ~08:00</div>
+      <div class="meal-name">Protein Scrambled Eggs with Cottage Cheese &amp; Avocado</div>
+      <span class="protein-badge">~22 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>2 large eggs</li>
+        <li>50 g low-fat smooth cottage cheese (stirred into eggs)</li>
+        <li>½ ripe avocado (fridge) — mash lightly with a pinch of salt and lemon juice</li>
+        <li>5 ml olive oil</li>
+        <li>Black pepper · 2 crackerbreads on the side</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Beat eggs, stir in cottage cheese. Cook in olive oil over low-medium heat, stirring slowly — low and slow for creamy texture.</li>
+        <li>Mash avocado with lemon juice and a pinch of salt.</li>
+        <li>Serve eggs alongside mashed avocado and crackerbreads. Eggs first.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
+      <div class="meal-name">Lamb Liver Cakes ×2</div>
+      <span class="protein-badge">~26 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>2 lamb liver cakes (from fridge or freezer)</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Reheat in air fryer at 160 °C for 6–8 min or microwave 90 sec.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-occasion">Lunch · ~13:00</div>
+      <div class="meal-name">Butter Bean &amp; Tuna Curry Bowl with Couscous</div>
+      <span class="protein-badge">~22 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving — serves 2 total)</h4><ul>
+        <li>½ can butter beans in curry sauce (pantry) — warm through in a small pot</li>
+        <li>60 g canned tuna in brine, drained (half a standard can)</li>
+        <li>50 g dry couscous — cook in 100 ml hot chicken stock (cover 5 min, fluff)</li>
+        <li>5 ml lemon juice · black pepper</li>
+        <li>Optional: 30 ml coconut milk stirred into the butter beans while warming for richness</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Warm butter beans in curry sauce in a small pot over medium-low heat, 4–5 min. Stir in coconut milk if using — it rounds out the curry flavour nicely.</li>
+        <li>Prepare couscous in hot chicken stock: pour stock over dry couscous, cover with a plate for 5 min, fluff with a fork.</li>
+        <li>Spoon couscous into a bowl. Top with butter beans. Add drained tuna alongside.</li>
+        <li>Drizzle lemon juice. Season with pepper. Eat tuna and beans before the couscous.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Uses up the butter beans in curry sauce from the pantry. Warm, filling, and minimal effort on a Thursday midday.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
+      <div class="meal-name">Cottage Cheese with Crackerbread</div>
+      <span class="protein-badge">~10 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>70 g low-fat smooth cottage cheese · 2 Provita Maize Crackerbread</li>
+        <li>Cucumber slices on the side · black pepper</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Spread, season, eat. Keep it light — cottage pie for dinner is filling.</li>
+      </ol></div>
+    </div>
+  </div>
+
+  <div class="dinner-section">
+    <div class="meal-card mom">
+      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
+      <div class="meal-occasion">Dinner · ~18:30</div>
+      <div class="meal-name">Warthog Mince Cottage Pie with Sweet Potato Mash</div>
+      <span class="protein-badge">~27 g protein (Landi's portion)</span>
+      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
+        <li>1 × 500 g warthog mince (defrost Wed evening)</li>
+        <li>2 medium onions, diced · 3–4 carrots (fridge), diced</li>
+        <li>1 can baked beans (pantry) — adds bulk and a little sweetness to the filling</li>
+        <li>1 beef stock cube dissolved in 150 ml hot water</li>
+        <li>2 cloves garlic, minced · 5 ml olive oil · salt and pepper · 5 g dried thyme</li>
+        <li><strong>Topping:</strong> 2 large sweet potatoes (1 in stock + 1 to buy), peeled, cubed, boiled then mashed with olive oil, salt and pepper (no butter for Landi's portion)</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li><strong>Filling:</strong> Heat olive oil in a large oven-safe pot or deep pan. Brown warthog mince, breaking it up well. Remove and set aside. Sauté onion, carrot, and garlic in the same pot for 4–5 min. Return mince. Add beef stock, baked beans, thyme, salt and pepper. Simmer on low for 15–20 min until carrots are tender and sauce has reduced slightly.</li>
+        <li><strong>Sweet potato mash:</strong> Peel and cube sweet potatoes. Boil in salted water 12–15 min until very tender. Drain and mash with olive oil (not butter — for Landi), salt and pepper until smooth.</li>
+        <li>Transfer filling to a baking dish (or leave in the oven-safe pot). Spread sweet potato mash evenly over the top.</li>
+        <li>Bake at 190 °C for 20–25 min until the mash is lightly golden on top and the filling is bubbling at the edges.</li>
+        <li><strong>Landi's portion:</strong> 100–120 g mince filling + 80 g sweet potato mash topping. Mince first.</li>
+      </ol></div>
+      <div class="note"><strong>Note for Mom:</strong> No butter in Landi's sweet potato mash — olive oil only. Warthog mince is very lean, so keep an eye on the filling — it should be saucy, not dry. Add a splash of water or stock if it looks dry before baking.</div>
+    </div>
+  </div>
+
+  <div class="day-totals">
+    <div class="stat"><div class="val">~107 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
+    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
+  </div>
+</div>
+
+<!-- ==================== FRI 19 JUNE ==================== -->
+<div id="fri19" class="page">
+  <div class="day-label">Friday 19 June <span class="day-meta">Mom cooks dinner · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + Mom)</span></div>
+
+  <div class="meals-grid">
+    <div class="meal-card">
+      <div class="meal-occasion">Breakfast · ~08:00</div>
+      <div class="meal-name">Fried Eggs with Cottage Cheese &amp; Crackerbread</div>
+      <span class="protein-badge">~21 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>2 large eggs, fried (sunny side up or over-easy)</li>
+        <li>50 g low-fat smooth cottage cheese (served on the side — cold, creamy contrast)</li>
+        <li>2 Provita Maize Crackerbread</li>
+        <li>5 ml olive oil for frying · salt and black pepper</li>
+        <li>Optional: few drops ponzu or soy over the eggs</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Heat a thin film of olive oil in a non-stick pan over medium-low heat.</li>
+        <li>Crack in eggs. Cover with a lid for 1–2 min until whites are set but yolks are still runny. Season with pepper.</li>
+        <li>Serve with cottage cheese and crackerbreads on the side. Eggs first.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Simple Friday morning start. The runny yolk on crackerbread is the small reward for a week done.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
+      <div class="meal-name">Cottage Cheese with Crackerbread</div>
+      <span class="protein-badge">~10 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>70 g low-fat smooth cottage cheese</li>
+        <li>2 Provita Maize Crackerbread</li>
+        <li>Black pepper · cucumber slices</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Spread, season, eat. Quick end-of-week snack.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-occasion">Lunch · ~13:00</div>
+      <div class="meal-name">Tuna &amp; White Miso Soup with Soft-Boiled Egg</div>
+      <span class="protein-badge">~22 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>350 ml chicken stock (stock cube + boiling water)</li>
+        <li>15 g white miso paste (fridge) — dissolved in a ladle of hot stock</li>
+        <li>50 g canned tuna in brine, drained (about half a can for 1 serving)</li>
+        <li>1 large egg, soft-boiled (7 min), halved</li>
+        <li>60 g cooked short-grain Japanese rice (small scoop — optional)</li>
+        <li>5 ml soy sauce · 5 ml pureed ginger (fridge) · 3–4 drops sesame oil</li>
+        <li>2–3 cucumber slices or carrot ribbons</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Bring stock to a simmer. Add ginger, simmer 2 min.</li>
+        <li>Dissolve white miso in a ladle of hot stock, then stir back into the pot. Do not boil after.</li>
+        <li>Add cooked rice to a bowl if using. Pour miso broth over. Top with drained tuna and halved soft-boiled egg.</li>
+        <li>Drizzle soy and sesame oil. Add cucumber alongside.</li>
+        <li><strong>Eat tuna and egg first.</strong></li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Back to white miso today — lighter and more delicate than red. Friday comfort in a bowl. Adding tuna to the miso soup boosts the protein without complicating the recipe.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
+      <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
+      <span class="protein-badge">~13 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>2 eggs (from Monday's Batch 1 — last of this batch) · 5 ml soy sauce</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Peel, halve, drizzle. Eat.</li>
+      </ol></div>
+    </div>
+  </div>
+
+  <div class="dinner-section">
+    <div class="meal-card mom">
+      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
+      <div class="meal-occasion">Dinner · ~18:30</div>
+      <div class="meal-name">Oven-Baked Snoek with Roasted Sweet Potato &amp; Carrots</div>
+      <span class="protein-badge">~30 g protein (Landi's portion)</span>
+      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
+        <li>Snoek (from freezer — defrost Thu evening), whole or fillets — approx. 800 g–1 kg</li>
+        <li>Basting: 30 ml olive oil · 4 cloves garlic, minced · juice of 1 lemon · 5 g dried mixed herbs (thyme, rosemary) · salt and black pepper</li>
+        <li>2 large sweet potatoes (to buy, or use any remaining from Thu) — peeled and sliced into 1.5 cm rounds</li>
+        <li>4 large carrots (fridge), peeled and cut into thick batons</li>
+        <li>Olive oil, salt and pepper for the veg</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li><strong>Roasted veg:</strong> Preheat oven to 200 °C. Toss sweet potato rounds and carrot batons in olive oil, salt and pepper. Spread on a baking tray. Roast 25–30 min until golden and tender, turning once.</li>
+        <li><strong>Basting:</strong> Mix olive oil, minced garlic, lemon juice, herbs, salt and pepper in a small bowl.</li>
+        <li><strong>Snoek:</strong> Place fish on a separate baking tray (or the braai grid if doing it outside). Brush basting generously over the flesh side. Bake at 190 °C for 20–25 min until fish flakes easily with a fork. Alternatively, braai over medium coals — baste every 5 min, 10–12 min per side.</li>
+        <li><strong>Landi's plate:</strong> 150 g snoek (flaked, no skin) + 80 g roasted sweet potato + 3–4 carrot batons. Protein first — fish before the veg.</li>
+      </ol></div>
+      <div class="note"><strong>Note for Mom:</strong> Snoek is a high-protein, omega-3-rich fish — excellent for Landi. The traditional apricot jam basting is off the menu (too much sugar) but the garlic and lemon version is delicious. No butter on the fish for Landi's portion.</div>
     </div>
   </div>
 
@@ -462,310 +675,217 @@
   </div>
 </div>
 
-<!-- ==================== THU 11 JUNE ==================== -->
-<div id="thu11" class="page">
-  <div class="day-label">Thursday 11 June <span class="day-meta">Mom cooks dinner · ×4</span></div>
-
-  <div class="meals-grid">
-    <div class="meal-card">
-      <div class="meal-occasion">Breakfast · ~08:00</div>
-      <div class="meal-name">Chinese Egg &amp; Tomato Stir-Fry (番茄炒蛋) with Short-Grain Rice</div>
-      <span class="protein-badge">~20 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>2–3 large eggs, beaten well</li>
-        <li>1 medium tomato (fridge), roughly chopped</li>
-        <li>5 ml sesame oil</li>
-        <li>10 ml soy sauce</li>
-        <li>½ tsp sugar (or 1 small sachet Huletts EquiSweet)</li>
-        <li>60 g cooked short-grain rice (cook fresh or use leftover)</li>
-        <li>Salt to taste</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Beat eggs well with a pinch of salt.</li>
-        <li>Heat sesame oil in a non-stick pan over medium-high. Pour in eggs — let set for 5 seconds, then scramble gently into large soft curds. Push to the side of the pan.</li>
-        <li>Add tomato chunks to the empty side. Cook 1–2 min until tomato softens and releases juices.</li>
-        <li>Mix together gently. Add soy sauce and sweetener. Toss to combine — another 30 seconds.</li>
-        <li>Serve over warm rice. The tomato sauce mingles into the rice beautifully.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">Classic Chinese home cooking. The tomato becomes silky and slightly sweet — deeply comforting on a winter morning. Total cook time under 5 minutes.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Lactose-Free Yogurt with Strawberries</div>
-      <span class="protein-badge">~10 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>150 g lactose-free plain yogurt (fridge)</li>
-        <li>Remaining strawberries (fridge — use up today or tomorrow)</li>
-        <li>Optional: 1 tsp protein powder stirred in</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Mix, eat.</li></ol></div>
-    </div>
-
-    <div class="meal-card">
-      <div class="meal-occasion">Lunch · ~13:00</div>
-      <div class="meal-name">Chickpea &amp; Tuna Soup</div>
-      <span class="protein-badge">~23 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>100 g canned chickpeas, drained and rinsed</li>
-        <li>50 g canned tuna in brine, drained (half a can)</li>
-        <li>400 ml chicken stock (pantry)</li>
-        <li>1 carrot (fridge), diced small</li>
-        <li>½ green pepper (fresh produce), diced</li>
-        <li>2 garlic cloves, minced (fridge) · 5 ml pureed ginger (fridge)</li>
-        <li>1 tsp curry powder · salt and pepper</li>
-        <li>5 ml olive oil</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Heat olive oil in a small pot. Sauté garlic, ginger, and curry powder 30 seconds until fragrant.</li>
-        <li>Add carrot and green pepper. Cook 2 minutes.</li>
-        <li>Pour in chicken stock. Add chickpeas. Simmer 8–10 minutes until carrot is tender.</li>
-        <li>Stir in drained tuna — cook 1 minute more. Season to taste.</li>
-        <li>Serve in a mug or small bowl. Protein first — eat the chickpeas and tuna before the broth.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">Warm, filling, and high-fibre. Use the chickpea brine to cook the veg in — it adds a subtle flavour boost.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
-      <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
-      <span class="protein-badge">~13 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>2 eggs (from Wednesday's batch) · 5 ml soy sauce</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Peel, halve, drizzle. Eat.</li></ol></div>
-    </div>
-  </div>
-
-  <div class="dinner-section">
-    <div class="meal-card mom">
-      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
-      <div class="meal-occasion">Dinner · ~18:30</div>
-      <div class="meal-name">Oven-Baked Bone-In Chicken Thighs with Roasted Carrots &amp; Peas</div>
-      <span class="protein-badge">~25 g protein (Landi's portion)</span>
-      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
-        <li>1 pack bone-in skin-on chicken thighs (4–8, defrost Wed evening)</li>
-        <li>Seasoning: 30 ml olive oil · 4 garlic cloves, minced · 5 g paprika · 5 g dried thyme · salt and pepper</li>
-        <li>4–5 carrots (fridge), peeled, cut into thick batons</li>
-        <li>1 can peas in brine, drained and heated</li>
-        <li>2–3 potatoes (fresh produce), cut into chunks (for family)</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Preheat oven to 200 °C. Rub chicken thighs with olive oil, garlic, paprika, thyme, salt and pepper.</li>
-        <li>Place chicken skin-side up on a baking tray. Toss carrot batons and potato chunks in olive oil and salt alongside the chicken.</li>
-        <li>Roast 35–40 minutes until chicken skin is golden and juices run clear.</li>
-        <li>Heat peas separately. Serve alongside.</li>
-        <li><strong>Landi's plate:</strong> 1 large or 2 small thighs — remove skin before eating. 80 g roasted carrot + 3 tbsp peas. Protein first.</li>
-      </ol></div>
-      <div class="note"><strong>Note for Mom:</strong> Set aside 1–2 thighs without sauce/gravy for Landi. She removes the skin herself. No potato for Landi unless she asks.</div>
-    </div>
-  </div>
-
-  <div class="day-totals">
-    <div class="stat"><div class="val">~91 g</div><div class="lbl">Protein (est.)</div></div>
-    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
-    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
-  </div>
-</div>
-
-<!-- ==================== FRI 12 JUNE ==================== -->
-<div id="fri12" class="page">
-  <div class="day-label">Friday 12 June <span class="day-meta">Mom cooks dinner · ×4</span></div>
-
-  <div class="meals-grid">
-    <div class="meal-card">
-      <div class="meal-occasion">Breakfast · ~08:00</div>
-      <div class="meal-name">Canned Mackerel on Crackerbread with Cucumber &amp; Tomato</div>
-      <span class="protein-badge">~20 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>1 can canned mackerel (pantry), drained and roughly flaked</li>
-        <li>2 Provita Maize Crackerbread</li>
-        <li>Cucumber slices · 2–3 tomato slices</li>
-        <li>Small amount Kewpie mayo (fridge) — optional</li>
-        <li>5 ml lemon juice · black pepper</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Drain and flake mackerel. Lay on crackerbreads.</li>
-        <li>A small smear of Kewpie mayo adds richness without much fat — optional.</li>
-        <li>Add cucumber and tomato. Squeeze lemon, season with pepper.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">End-of-week pantry breakfast — no cooking, ready in 2 minutes.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Cottage Cheese with Cucumber &amp; Chives</div>
-      <span class="protein-badge">~12 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>100 g low-fat smooth cottage cheese (fridge)</li>
-        <li>Cucumber slices · fresh chives, chopped</li>
-        <li>Pinch salt · black pepper</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Spoon cottage cheese into a small bowl. Top with chives, season, and add cucumber on the side. Savory snack — no crackerbread needed unless still hungry.</li>
-      </ol></div>
-    </div>
-
-    <div class="meal-card">
-      <div class="meal-occasion">Lunch · ~13:00</div>
-      <div class="meal-name">Miso Udon Bowl with Soft-Boiled Eggs</div>
-      <span class="protein-badge">~18 g protein</span>
-      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>1 portion udon noodles (from pantry) — cook 60–70 g dry</li>
-        <li>400 ml chicken stock (pantry)</li>
-        <li>15 g white miso paste (fridge) — dissolve in a ladle of hot stock first</li>
-        <li>5 ml soy sauce · 5 ml pureed ginger (fridge)</li>
-        <li>2 eggs, soft-boiled (7 min from boiling), halved</li>
-        <li>3–4 carrot slices (fridge) — simmer in the broth</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li>Soft-boil eggs: 7 min from boiling, cold water, peel. Set aside.</li>
-        <li>Bring chicken stock to a simmer. Add ginger and carrot slices. Simmer 5 minutes.</li>
-        <li>Dissolve white miso in a ladle of the hot stock, then stir back into the pot. Keep below boiling.</li>
-        <li>Cook udon noodles separately per packet instructions (usually 3–4 min boiling). Drain and add to bowl.</li>
-        <li>Pour miso broth over noodles. Place soft-boiled egg halves on top. Finish with soy sauce.</li>
-        <li><strong>Landi's portion:</strong> Small bowl — noodles first, broth, then egg. Eat eggs first.</li>
-      </ol></div>
-      <div class="note-info" style="margin-top:8px">Classic Friday comfort food. Japanese miso broth with eggs is easy on the stomach and deeply warming.</div>
-    </div>
-
-    <div class="meal-card snack">
-      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
-      <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
-      <span class="protein-badge">~13 g protein</span>
-      <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>2 eggs (from Wednesday's batch) · 5 ml soy sauce</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Peel, halve, drizzle. Eat.</li></ol></div>
-    </div>
-  </div>
-
-  <div class="dinner-section">
-    <div class="meal-card mom">
-      <div class="mom-tag">👩‍🍳 Mom cooks · ×4</div>
-      <div class="meal-occasion">Dinner · ~18:30</div>
-      <div class="meal-name">Boerewors with Sweet Potato Mash &amp; Tomato Sauce</div>
-      <span class="protein-badge">~22 g protein (Landi's portion)</span>
-      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
-        <li>Boerewors (from freezer — defrost Thu evening), approx. 600–800 g</li>
-        <li>2–3 sweet potatoes (fresh produce), peeled and cubed</li>
-        <li>15 ml olive oil (for mash — no butter for Landi)</li>
-        <li>Salt and pepper</li>
-        <li>1 jar or can tomato sauce (pantry), heated</li>
-        <li>Optional: chopped onion sautéed into the tomato sauce for extra flavour</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol>
-        <li><strong>Boerewors:</strong> Cook in a pan over medium heat — keep coil intact, don't pierce the skin. Cook 5–7 min per side until browned and cooked through. Or oven at 180 °C for 25–30 min.</li>
-        <li><strong>Sweet potato mash:</strong> Boil sweet potato cubes until very tender (~15 min). Drain. Mash with olive oil (NOT butter for Landi's portion), salt and pepper.</li>
-        <li><strong>Tomato sauce:</strong> Heat through, stir in sautéed onion if using.</li>
-        <li><strong>Landi's plate:</strong> 100 g boerewors (weigh before serving) + 80 g sweet potato mash (plain, no butter) + a spoonful of tomato sauce. Protein first.</li>
-      </ol></div>
-      <div class="note"><strong>Note for Mom:</strong> Set aside Landi's sweet potato mash before adding butter. Use olive oil only in Landi's portion. Boerewors is a sausage with some fat — a 100 g portion keeps it reasonable for Landi.</div>
-    </div>
-  </div>
-
-  <div class="day-totals">
-    <div class="stat"><div class="val">~85 g</div><div class="lbl">Protein (est.)</div></div>
-    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
-    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
-  </div>
-</div>
-
-<!-- ==================== SAT 13 JUNE ==================== -->
-<div id="sat13" class="page">
-  <div class="day-label">Saturday 13 June <span class="day-meta">Landi cooks · ×2</span></div>
+<!-- ==================== SAT 20 JUNE ==================== -->
+<div id="sat20" class="page">
+  <div class="day-label">Saturday 20 June <span class="day-meta">Landi + Mom cook · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + husband)</span></div>
 
   <div class="meals-grid">
     <div class="meal-card">
       <div class="meal-occasion">Breakfast · ~09:00</div>
-      <div class="meal-name">Cheddar Scrambled Eggs with Tomato &amp; Chives</div>
-      <span class="protein-badge">~18 g protein</span>
+      <div class="meal-name">Japanese Soft-Scrambled Eggs with White Miso Soup</div>
+      <span class="protein-badge">~18 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>2 large eggs</li>
-        <li>20 ml lactose-free milk</li>
-        <li>20 g lactose-free cheddar (fridge), grated</li>
-        <li>5 ml olive oil</li>
-        <li>1 tomato (fridge), sliced</li>
-        <li>Fresh chives · black pepper</li>
+        <li>2–3 large eggs, beaten with 10 ml water</li>
+        <li>5 ml sesame oil</li>
+        <li><strong>Miso soup:</strong> 300 ml chicken stock · 10 g white miso paste dissolved in a ladle of the hot stock · 3–4 drops sesame oil</li>
+        <li>60 g cooked short-grain Japanese rice (optional small scoop)</li>
+        <li>2–3 carrot ribbons or cucumber slices for colour</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Whisk eggs with milk and grated cheddar. Season with pepper.</li>
-        <li>Heat olive oil in a non-stick pan over low heat. Add egg mixture. Stir slowly — the cheddar melts through as it cooks, making the eggs creamy and rich.</li>
-        <li>Remove just before fully set. Top with chives. Serve with sliced tomato.</li>
+        <li><strong>Eggs:</strong> Beat eggs with water. Heat sesame oil in a non-stick pan over the lowest heat possible. Add eggs. Stir very slowly and continuously with a silicone spatula — Japanese-style scrambled eggs are custard-soft. Pull pan off heat while they still look slightly underdone; residual heat finishes them.</li>
+        <li><strong>Miso soup:</strong> Bring stock to just below a boil. Dissolve miso in a small ladle of hot stock, then stir back in. Do not boil. Season with sesame oil.</li>
+        <li>Serve eggs alongside a small cup of miso soup. Rice on the side if you want it.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Weekend breakfast — slightly richer, slightly more indulgent. Lactose-free cheddar keeps it safe.</div>
+      <div class="note-info" style="margin-top:8px">A proper weekend-paced breakfast. Very slow scrambled eggs take about 4 minutes over very low heat — they're worth it.</div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
-      <div class="meal-name">Liver Cake or Sardines on Crackerbread</div>
-      <span class="protein-badge">~13–17 g protein</span>
-      <div class="ingredients"><h4>Option A: Liver cake</h4><ul>
-        <li>1 lamb liver cake from freezer · reheat at 160 °C 6–8 min</li>
+      <div class="meal-name">Chocolate Protein Shake</div>
+      <span class="protein-badge">~20 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>1 scoop plant-based chocolate protein powder (pantry)</li>
+        <li>200–250 ml Woolworths lactose-free full cream milk (or cold water if preferred)</li>
+        <li>Optional: small handful ice cubes if you have them</li>
       </ul></div>
-      <div class="ingredients"><h4>Option B: Sardines</h4><ul>
-        <li>1 can sardines in brine, drained · 1–2 Provita Maize Crackerbread</li>
-        <li>Few drops lemon juice · black pepper</li>
-      </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Choose whichever sounds more appealing — both hit the protein target.</li></ol></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Add protein powder to milk. Shake in a shaker bottle or whisk until smooth. Drink slowly — sip, don't gulp. Counts towards fluid target.</li>
+      </ol></div>
     </div>
 
     <div class="meal-card">
       <div class="meal-occasion">Lunch · ~13:00</div>
       <div class="meal-name">Tuna &amp; Cottage Cheese Bowl with Ponzu</div>
-      <span class="protein-badge">~28 g protein</span>
+      <span class="protein-badge">~28 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
-        <li>1 can tuna in brine (~120 g), drained</li>
+        <li>80 g canned tuna in brine, drained</li>
         <li>50 g low-fat smooth cottage cheese</li>
-        <li>Cucumber, diced · tomato, diced</li>
-        <li>Fresh chives, chopped</li>
-        <li>10 ml ponzu sauce · black pepper</li>
+        <li>Cucumber, diced · tomato, diced · carrot ribbons (optional)</li>
+        <li>10 ml ponzu sauce · black pepper · fresh chives if available</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li>Drain tuna well. Mix loosely with cottage cheese — or keep them side by side in the bowl.</li>
-        <li>Add diced cucumber and tomato. Top with chives.</li>
-        <li>Drizzle ponzu over everything. Season with black pepper.</li>
-        <li>No crackerbread needed — this bowl is protein-forward as is.</li>
+        <li>Drain tuna. Mix loosely with cottage cheese — or keep side by side in the bowl.</li>
+        <li>Add cucumber, tomato. Drizzle ponzu. Season with pepper. Top with chives.</li>
+        <li>No crackerbread needed — this is protein-forward and light enough before dinner.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px">Japanese-inspired. Clean, high-protein, no cooking required — good before you cook dinner tonight.</div>
     </div>
 
     <div class="meal-card snack">
       <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
-      <div class="meal-name">Greek Yogurt — Plain</div>
-      <span class="protein-badge">~9 g protein</span>
+      <div class="meal-name">Lactose-Free Plain Yogurt</div>
+      <span class="protein-badge">~5 g protein (Landi)</span>
       <div class="ingredients"><h4>Ingredients</h4><ul>
-        <li>100 g double Greek yogurt</li>
+        <li>150 g lactose-free plain yogurt (fridge)</li>
+        <li>Passion fruit (pantry) if remaining — halve and spoon flesh over yogurt</li>
       </ul></div>
-      <div class="method"><h4>Method</h4><ol><li>Light snack before dinner prep. Keeps you from getting too hungry while cooking.</li></ol></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Light snack before a big feast dinner. Keep it small so you have room to enjoy dinner.</li>
+      </ol></div>
     </div>
   </div>
 
   <div class="dinner-section">
     <div class="meal-card dinner">
-      <div class="meal-occasion">Dinner · ~18:30 — Landi cooks · ×2 · Japanese</div>
-      <div class="meal-name">Steamed Pot Stickers &amp; Lamb Dumplings with Gochujang-Ponzu Dipping Sauce</div>
-      <span class="protein-badge">~25 g protein (Landi's portion)</span>
-      <div class="ingredients"><h4>Ingredients (×2)</h4><ul>
-        <li>Chili sautéed chicken pot stickers (from freezer) — defrost from fridge overnight (Fri evening)</li>
-        <li>Lamb with spring onion dumplings (from freezer) — defrost from fridge overnight</li>
-        <li>Dipping sauce: 5 ml gochujang paste · 20 ml ponzu sauce · 5 ml rice vinegar · 5 ml soy sauce · 2–3 drops sesame oil</li>
-        <li>200 ml water (for Instant Pot steaming)</li>
-        <li>Optional garnish: cucumber slices, chives, carrot ribbons</li>
+      <div class="cook-tag">🍳 Landi + Mom cook · ×4</div>
+      <div class="meal-occasion">Dinner · ~18:30 — Asian Feast Night</div>
+      <div class="meal-name">Steamed Pot Stickers &amp; BBQ Pork Bao Buns with Udon Broth &amp; Veg Sides</div>
+      <span class="protein-badge">~28 g protein (Landi's portion)</span>
+      <div class="ingredients"><h4>Proteins (×4)</h4><ul>
+        <li>10 pot stickers (chilli sautéed chicken — from freezer, defrost Fri evening) — approximately 2–3 each</li>
+        <li>6 BBQ pork bao buns (from freezer, defrost Fri evening) — 1–2 each</li>
+      </ul></div>
+      <div class="ingredients"><h4>Udon Noodle Broth (×4)</h4><ul>
+        <li>4 portions udon noodles (pantry) — cook 60 g dry per person in boiling water 3–4 min, drain</li>
+        <li>1.2 L chicken stock (stock cubes or bone broth concentrate + boiling water)</li>
+        <li>20 ml soy sauce · 10 ml mirin · 10 ml pureed ginger (fridge) · 5 ml sesame oil</li>
+        <li>Optional: a spoonful of white miso dissolved in the broth</li>
+      </ul></div>
+      <div class="ingredients"><h4>Veg Sides</h4><ul>
+        <li>1 cucumber, cut into batons</li>
+        <li>3–4 carrots (fridge), cut into batons or thin slices</li>
+      </ul></div>
+      <div class="ingredients"><h4>Dipping Sauces</h4><ul>
+        <li><strong>Ponzu:</strong> Ponzu sauce direct from bottle (fridge)</li>
+        <li><strong>Gochujang:</strong> 10 ml gochujang · 20 ml ponzu · 5 ml rice vinegar · 3–4 drops sesame oil — whisk together</li>
       </ul></div>
       <div class="method"><h4>Method</h4><ol>
-        <li><strong>Dipping sauce:</strong> Whisk gochujang, ponzu, rice vinegar, soy and sesame oil together in a small bowl. Taste — add more ponzu if too spicy, more gochujang if you want more heat.</li>
-        <li><strong>Instant Pot — steam method:</strong> Add 200 ml water to the pot. Place steamer basket or trivet inside. Arrange dumplings and pot stickers in a single layer (don't stack).</li>
-        <li>Steam on HIGH pressure for 5 minutes. Quick release. Check that filling is piping hot through.</li>
-        <li>Alternatively, steam in a bamboo steamer over a pot of simmering water for 8–10 minutes.</li>
-        <li><strong>Landi's portion:</strong> 5–7 pieces total (small SADI-S portion) — mix of both types. Protein first before any dipping sauce-heavy bites.</li>
+        <li><strong>Dipping sauces:</strong> Prepare both sauces and pour into small dipping bowls. Set the table with sauces, cucumber batons, and carrot sticks.</li>
+        <li><strong>Udon broth:</strong> Bring stock to a simmer. Add soy, mirin, ginger, sesame oil (and miso if using). Simmer 5 min. Keep warm on the hob.</li>
+        <li><strong>Udon noodles:</strong> Cook in a separate pot of boiling water per packet. Drain and portion into bowls. Ladle hot broth over. Serve as the base alongside the dumplings.</li>
+        <li><strong>Pot stickers — Instant Pot steam:</strong> Add 200 ml water to the Instant Pot. Place trivet inside. Arrange pot stickers in a single layer. Steam on HIGH pressure 5 min, quick release. Check filling is piping hot.</li>
+        <li><strong>Bao buns — steam:</strong> Steam in the Instant Pot (same method) or in a bamboo steamer over simmering water for 8–10 min from defrosted. Bao buns should be puffy and soft.</li>
+        <li>Serve everything at the table together — feast style.</li>
+        <li><strong>Landi's portion:</strong> 2–3 pot stickers + 1 bao bun + small bowl udon broth with a few noodles. Eat protein first (dumplings, bao pork filling). Use dipping sauces freely. Eat slowly — chew very well. Leave the cucumber and carrot batons out on the table for grazing.</li>
       </ol></div>
-      <div class="note-info" style="margin-top:8px"><strong>Why steam instead of fry?</strong> The label says "chili sautéed" but steaming keeps the fat content much lower — important for post-bariatric eating. The dipping sauce provides all the flavour you need. Gochujang heat confirmed — enjoy!</div>
+      <div class="note-info" style="margin-top:8px"><strong>Tip:</strong> Steam the pot stickers rather than pan-frying — the dipping sauce gives all the flavour, and steaming keeps fat content low. Gochujang dipping sauce is the winner with the pot stickers. Ponzu is great with the bao bun.</div>
     </div>
   </div>
 
   <div class="day-totals">
-    <div class="stat"><div class="val">~93 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">~99 g</div><div class="lbl">Protein (est.)</div></div>
+    <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
+    <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
+  </div>
+</div>
+
+<!-- ==================== SUN 21 JUNE ==================== -->
+<div id="sun21" class="page">
+  <div class="day-label">Sunday 21 June <span class="day-meta">Landi + Mom cook · ×4 &nbsp;|&nbsp; Breakfast &amp; lunch ×2 (Landi + husband)</span></div>
+
+  <div class="meals-grid">
+    <div class="meal-card">
+      <div class="meal-occasion">Breakfast · ~09:00</div>
+      <div class="meal-name">White Miso Soup with 2 Soft-Boiled Eggs &amp; Rice</div>
+      <span class="protein-badge">~16 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>2 large eggs, soft-boiled (7 min from boiling)</li>
+        <li>300 ml chicken stock · 15 g white miso paste (fridge) — dissolved in a ladle of stock</li>
+        <li>5 ml soy sauce · 3–4 drops sesame oil</li>
+        <li>60 g cooked short-grain Japanese rice (optional small scoop)</li>
+        <li>2 Provita Maize Crackerbread (on the side)</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Soft-boil eggs 7 min. Cold water. Peel and halve — drizzle with soy.</li>
+        <li>Bring stock to just below a boil. Dissolve miso, stir in, add sesame oil. Do not boil.</li>
+        <li>Serve miso soup in a small cup or bowl. Eggs and rice alongside. Eggs first.</li>
+      </ol></div>
+      <div class="note-info" style="margin-top:8px">Classic Japanese breakfast format. Protein and warmth to start a Sunday.</div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Morning Snack · ~10:30</div>
+      <div class="meal-name">Cottage Cheese on Crackerbread</div>
+      <span class="protein-badge">~10 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>70 g low-fat smooth cottage cheese</li>
+        <li>2 Provita Maize Crackerbread</li>
+        <li>Black pepper · cucumber slices</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Spread and eat. Quick Sunday snack before lunch prep starts.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card">
+      <div class="meal-occasion">Lunch · ~13:00</div>
+      <div class="meal-name">Warm Sardine &amp; Couscous Bowl with Lemon &amp; Herbs</div>
+      <span class="protein-badge">~21 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients (1 serving)</h4><ul>
+        <li>1 can sardines in brine (~85 g drained), roughly flaked</li>
+        <li>60 g dry couscous — cook in 120 ml hot chicken stock, cover 5 min, fluff</li>
+        <li>Cucumber, diced · tomato, diced (fridge)</li>
+        <li>10 ml lemon juice · black pepper · dried herbs (oregano, parsley)</li>
+        <li>5 ml olive oil drizzled over the top</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Prepare couscous in hot chicken stock. Fluff with a fork.</li>
+        <li>Arrange in a bowl. Top with sardines, cucumber, and tomato.</li>
+        <li>Drizzle with lemon juice and olive oil. Season with herbs and pepper. Sardines first.</li>
+      </ol></div>
+    </div>
+
+    <div class="meal-card snack">
+      <div class="meal-occasion">Mid-Afternoon Snack · ~16:00</div>
+      <div class="meal-name">Hard-Boiled Eggs ×2 with Soy</div>
+      <span class="protein-badge">~13 g protein (Landi)</span>
+      <div class="ingredients"><h4>Ingredients</h4><ul>
+        <li>2 eggs (from Wednesday's Batch 2) · 5 ml soy sauce</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li>Peel, halve, drizzle. Eat. Last afternoon snack of the week.</li>
+      </ol></div>
+    </div>
+  </div>
+
+  <div class="dinner-section">
+    <div class="meal-card dinner">
+      <div class="cook-tag">🍳 Landi + Mom cook · ×4</div>
+      <div class="meal-occasion">Dinner · ~18:30</div>
+      <div class="meal-name">Instant Pot Lamb Knuckle with Green Beans &amp; Roasted Carrots</div>
+      <span class="protein-badge">~20 g protein (Landi's portion)*</span>
+      <div class="ingredients"><h4>Ingredients (×4)</h4><ul>
+        <li>1 lamb knuckle (from freezer — defrost Sat evening)</li>
+        <li>1 onion, roughly chopped · 3 cloves garlic, whole · 1 lamb stock cube dissolved in 250 ml hot water</li>
+        <li>5 g dried rosemary · 5 g dried thyme · salt and black pepper</li>
+        <li>200 ml water (for pressure cooking)</li>
+        <li><strong>Sides:</strong> Green beans (to buy) — trimmed, blanched or steamed</li>
+        <li>4–5 carrots (fridge), peeled and cut into thick batons — roast in oven</li>
+        <li>Optional: any remaining sweet potato from the week, cubed and roasted alongside the carrots</li>
+      </ul></div>
+      <div class="method"><h4>Method</h4><ol>
+        <li><strong>Roasted carrots:</strong> Preheat oven to 200 °C. Toss carrot batons (and sweet potato if using) in olive oil, salt and pepper. Roast 25–30 min. Can go into the oven while the lamb pressure-cooks.</li>
+        <li><strong>Lamb knuckle — Instant Pot:</strong> Place onion, garlic, rosemary, and thyme at the bottom of the Instant Pot. Season the lamb knuckle well with salt and pepper and sit it on top. Pour over lamb stock and 200 ml water. Seal lid.</li>
+        <li>Pressure cook on HIGH for 50 minutes. Allow natural pressure release for 15 minutes, then quick release any remaining steam.</li>
+        <li>The meat should be completely fall-off-the-bone tender. Shred the meat off the bone with two forks. Discard the bone. Skim any visible fat off the cooking juices and use the juices as a light sauce.</li>
+        <li><strong>Green beans:</strong> Blanch in boiling salted water for 3–4 min until just tender but still green. Or steam for 5 min. Season with olive oil, salt and pepper.</li>
+        <li><strong>Landi's plate:</strong> 100–120 g shredded lamb + a ladle of cooking juices + green beans + roasted carrots. Protein first.</li>
+      </ol></div>
+      <div class="note"><strong>* Lamb knuckle note:</strong> One knuckle is bone-heavy — actual meat yield for 4 people will be smaller portions. This is fine for Landi's SADI-S portion sizes. If Landi's protein feels low at the end of the day, add 1–2 hard-boiled eggs or a lamb liver cake alongside dinner as a top-up. The cooking juices from the Instant Pot are flavour-forward (not protein-significant) so don't count them as protein.</div>
+    </div>
+  </div>
+
+  <div class="day-totals">
+    <div class="stat"><div class="val">~80 g+</div><div class="lbl">Protein (est.)</div></div>
     <div class="stat"><div class="val">≥ 1 500 ml</div><div class="lbl">Fluid</div></div>
     <div class="stat"><div class="val">5</div><div class="lbl">Occasions</div></div>
   </div>
@@ -773,51 +893,61 @@
 
 <!-- ==================== SHOPPING LIST ==================== -->
 <div id="shopping" class="page">
-  <div class="day-label">Shopping List — Week of 8 June</div>
+  <div class="day-label">Shopping List — Week of 15 June</div>
 
-  <div class="note-info" style="margin-bottom: 16px;"><strong>Good news:</strong> This week is almost entirely from your existing stock. The list below is minimal — mostly a check-and-top-up. Tick anything you already have.</div>
+  <div class="note-info" style="margin-bottom: 16px;"><strong>Stock-first week:</strong> Almost everything comes from what's already in the house. The list below is minimal. Tick anything you already have. Only unticked items are copied to WhatsApp.</div>
 
   <button class="copy-btn" onclick="copyShoppingList()">📋 Copy for WhatsApp</button>
   <button class="print-btn" onclick="window.print()">🖨️ Print</button>
   <span class="copy-confirm" id="copyConfirm">✓ Copied!</span>
 
   <div class="shop-section">
-    <h3>🥚 Eggs — Restock</h3>
+    <h3>🥚 Eggs — Top Up</h3>
     <div class="shop-grid">
-      <div class="shop-item"><input type="checkbox" id="s1"><label for="s1"><strong>Eggs, large</strong><span>18–24 (heavy use — 2 batches of hard-boiled + daily cooking)</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="e1"><label for="e1"><strong>Eggs, large</strong><span>Buy 18–24 to top up (you have 12 — need 36+ for the full week between two people)</span></label></div>
     </div>
   </div>
 
   <div class="shop-section">
-    <h3>🥛 Dairy &amp; Refrigerated — Check Stock</h3>
+    <h3>🥦 Fresh Produce — Small Purchases</h3>
     <div class="shop-grid">
-      <div class="shop-item"><input type="checkbox" id="d1"><label for="d1"><strong>Woolworths lactose-free full cream milk</strong><span>For tea — top up if running low (long-life backup in pantry)</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="d2"><label for="d2"><strong>Provita Maize Crackerbread</strong><span>Check stock — 1–2 boxes if needed</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="p1"><label for="p1"><strong>Green pepper ×1</strong><span>Monday bolognese — specifically requested</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="p2"><label for="p2"><strong>Sweet potato ×1–2 extra</strong><span>You have 1 in stock — Thursday cottage pie needs 2 large ones; Fri snoek also uses sweet potato</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="p3"><label for="p3"><strong>Green beans — 1 bag</strong><span>Sunday lamb knuckle — not in current stock</span></label></div>
     </div>
   </div>
 
   <div class="shop-section">
-    <h3>🌿 Fresh Herbs — Optional</h3>
+    <h3>🥛 Dairy — Check &amp; Top Up</h3>
     <div class="shop-grid">
-      <div class="shop-item"><input type="checkbox" id="h1"><label for="h1"><strong>Spring onions</strong><span>1 bunch — nice for garnishing the dumpling dinner and stir-fries (optional, chives can substitute)</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="d1"><label for="d1"><strong>Woolworths lactose-free full cream milk</strong><span>For tea — top up if running low</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="d2"><label for="d2"><strong>Provita Maize Crackerbread</strong><span>Check stock — 1 box if needed (used daily)</span></label></div>
     </div>
   </div>
 
   <div class="shop-section">
     <h3>✅ Already In Stock — No Need to Buy</h3>
     <div class="shop-grid">
-      <div class="shop-item"><input type="checkbox" id="ok1"><label for="ok1"><strong>Smoked mackerel</strong><span>In fridge ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok2"><label for="ok2"><strong>Avocados</strong><span>In fridge, ripe ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok3"><label for="ok3"><strong>Strawberries</strong><span>In fridge ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok4"><label for="ok4"><strong>Lamb liver cakes</strong><span>In fridge/freezer ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok5"><label for="ok5"><strong>All meat proteins</strong><span>Chicken, pork, lamb, boerewors, dumplings — in freezer ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok6"><label for="ok6"><strong>Sardines, tuna, mackerel (canned)</strong><span>In pantry ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok7"><label for="ok7"><strong>Udon noodles, couscous, rice</strong><span>In pantry ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok8"><label for="ok8"><strong>Miso, soy, mirin, ponzu, gochujang</strong><span>In fridge ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok9"><label for="ok9"><strong>Butternut, sweet potato, potatoes, gem squash, green peppers, onions</strong><span>In fresh produce ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok10"><label for="ok10"><strong>Cottage cheese, Greek yogurt, cheddar</strong><span>In fridge ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok11"><label for="ok11"><strong>Stocks (chicken, bone broth)</strong><span>In pantry ✓</span></label></div>
-      <div class="shop-item"><input type="checkbox" id="ok12"><label for="ok12"><strong>Chickpeas, chopped tomatoes</strong><span>In pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok1"><label for="ok1"><strong>2 × 500 g warthog mince</strong><span>In freezer — Mon bolognese + Thu cottage pie ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok2"><label for="ok2"><strong>Boerewors</strong><span>In freezer — Tue dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok3"><label for="ok3"><strong>Crumbled chicken steaklets</strong><span>In freezer — Wed dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok4"><label for="ok4"><strong>Snoek</strong><span>In freezer — Fri dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok5"><label for="ok5"><strong>Pot stickers (10 pc) + BBQ pork bao buns (6 pc)</strong><span>In freezer — Sat dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok6"><label for="ok6"><strong>Lamb knuckle</strong><span>In freezer — Sun dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok7"><label for="ok7"><strong>Canned mackerel, sardines, tuna</strong><span>In pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok8"><label for="ok8"><strong>Penne, udon noodles, couscous, polenta, Japanese rice</strong><span>In pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok9"><label for="ok9"><strong>Baked beans + butter beans in curry sauce</strong><span>In pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok10"><label for="ok10"><strong>All miso, soy, mirin, ponzu, gochujang, sesame oil</strong><span>In fridge/pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok11"><label for="ok11"><strong>Gem squash ×2</strong><span>In fresh produce — Tue dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok12"><label for="ok12"><strong>Butternut squash ×1</strong><span>In fresh produce — Wed dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok13"><label for="ok13"><strong>Onions, carrots, cucumber, tomatoes</strong><span>In fridge ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok14"><label for="ok14"><strong>Cottage cheese, LF yogurt, double Greek yogurt</strong><span>In fridge — check stock midweek ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok15"><label for="ok15"><strong>Lamb liver cakes</strong><span>In fridge + freezer — check stock Sun, make more if needed ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok16"><label for="ok16"><strong>Bone broth concentrate, all stock cubes</strong><span>In pantry ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok17"><label for="ok17"><strong>Avocados, passion fruit, strawberries</strong><span>In fridge — use Tue (strawberries), Thu (avocado) ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok18"><label for="ok18"><strong>Plant-based chocolate protein powder</strong><span>In pantry — Sat snack ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok19"><label for="ok19"><strong>Polenta</strong><span>In pantry — Wed dinner ✓</span></label></div>
+      <div class="shop-item"><input type="checkbox" id="ok20"><label for="ok20"><strong>Coconut milk</strong><span>In pantry — optional in Thu lunch ✓</span></label></div>
     </div>
   </div>
 </div>
@@ -833,7 +963,7 @@ function showPage(id) {
 
 // Persist checkbox state
 document.querySelectorAll('input[type=checkbox]').forEach(cb => {
-  const key = 'shop3_' + cb.id;
+  const key = 'shop4_' + cb.id;
   if (sessionStorage.getItem(key) === 'true') cb.checked = true;
   cb.addEventListener('change', () => sessionStorage.setItem(key, cb.checked));
 });
@@ -841,15 +971,14 @@ document.querySelectorAll('input[type=checkbox]').forEach(cb => {
 // Copy shopping list as plain text for WhatsApp — unchecked items only
 function copyShoppingList() {
   const sections = document.querySelectorAll('#shopping .shop-section');
-  let text = '🛒 *Landi Shopping List — 8 June week*\n\n';
+  let text = '🛒 *Landi Shopping List — 15 June week*\n\n';
   sections.forEach(section => {
     const heading = section.querySelector('h3').innerText;
-    // Skip the "already in stock" section
     if (heading.includes('Already In Stock')) return;
     const uncheckedItems = [];
     section.querySelectorAll('.shop-item').forEach(item => {
       const cb = item.querySelector('input[type="checkbox"]');
-      if (cb && cb.checked) return; // skip ticked items
+      if (cb && cb.checked) return;
       const label = item.querySelector('label');
       if (!label) return;
       const name = label.querySelector('strong').innerText;
